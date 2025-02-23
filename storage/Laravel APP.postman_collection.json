@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "3809e971-8612-48eb-82c8-7b01d0203e7c",
+		"name": "Laravel APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40171608"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test\",\r\n    \"email\": \"test@mail.com\",\r\n    \"password\": \"12345678\",\r\n    \"password_confirmation\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@mail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unser Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ZTQ3Nzg1ZC0wZTc2LTRiOTAtYTg5YS1jZDhjNzliZWI3ZWQiLCJqdGkiOiI1MTA0NzNhZDdiZjE4MjdkODUwYjVhODAzMTk2MDE3NDc2NjVjZTNkMmNmNTUyYjYzYjBkYmRiN2E1ZjY0ZDJiYjc4OTEzNGFmNGI0NDFhMiIsImlhdCI6MTc0MDI5ODAyOC42MzgwMzEsIm5iZiI6MTc0MDI5ODAyOC42MzgwMzIsImV4cCI6MTg5Nzk3ODAyOC42MzMwNywic3ViIjoiMSIsInNjb3BlcyI6W119.TFv5LMOKwMrEdyQooC4Zp3n4__cN_XsB9tD3s7wBEmk54Uhi9zC3i8zsBWQBZFGMgIhe2wtkpAjz7eshTl1usXD1LwW4X0iYpO_VkwN_YUMKaASbZBp8-e0GDXxcK2zMSy6cDUXivBqHO2YnEX2Feb2rW17jLmr2wr_75BEwnDxDIGIpYL2-At_WH8ZYu4sxs2gPcuspxYQtaGB10DllEdguUHiEaQ9yk7tXlYmU27tOVxkmumqpgBBMmLd7Tc9irYjWuWxgViahhyC19DfKCdNngSHSIIGjFs5qR0EYUvdzkUIGf8HaevB4qchk1h24XMPdmqlKSAbtUz9wObA0OMBqJPYL4BYpSOoPO3_RSAJZCjVuEHd6_tYYuv7iyXOsUWu2cb0pAcmlbsrnNfFThVvETL2Qe8MhulLcz3h8KLIA4KomUzyQrBk4ZX-V8hzm9gB0G7ioYVrSfQld9KvsGmpBZDELf9fGA2xRXBXuomxIayZMwOhaJljz_L87fY8E_bSXk2xMZQ2G-jf9MhkUrzQqM5qzUEQpnP_TfuVZPf6OsvCUVyn8gB-ukzp_za2JcubwJbM7d_IpTqReKe4bzponcbOMUiom_bampWeTLepK1bQDKthQ8KBCpsE2iLFvp9Vu1Di3ET9rVQmWMcEyl51DWN4TsuZvYkepj5bDw-8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
