@@ -1,4 +1,4 @@
-# Laravel API with Authentication (Passport)
+# Laravel 11 API with Authentication (Passport)
 
 This Laravel project provides a basic API with user registration, login, and token-based authentication using Laravel Passport.
 
